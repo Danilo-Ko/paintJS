@@ -10,11 +10,11 @@
     <body>
         <canvas id="jsCanvas" class="canvas"></canvas>
         <div class="rangeForm">
-            <input type="range" id="points" class="range" name="points" min="0" max="5">
+            <input type="range" id="jsRange" class="range" name="points" min="0" max="5" step = "0.1">
         </div>
         <div class="button">
-            <button class="paint">PAINT</button>
-            <button class="save">SAVE</button>
+            <button id = "paintBtn" class="paint">PAINT</button>
+            <button id = "saveBtn" class="save">SAVE</button>
         </div>
         <div class="canvasColorForm">
             <canvas class="bgColor" style="background-color:black"></canvas>
@@ -24,8 +24,8 @@
             <canvas class="bgColor" style="background-color:skyblue"></canvas>
             <canvas class="bgColor" style="background-color:gray"></canvas>
             <canvas class="bgColor" style="background-color:red"></canvas>
-            <canvas class="bgColor" style="background-color:lightgreen"></canvas>
-            <canvas class="bgColor" style="background-color:rgb(75, 191, 230)"></canvas>
+            <canvas class="bgColor" style="background-color:green"></canvas>
+            <canvas class="bgColor" style="background-color:blue"></canvas>
         </div>
         <!-- <script src="execise.js"></script> -->
         <script src="app.js"></script>
