@@ -8,14 +8,16 @@
     <title>PaintJS</title>
 </head>
 <body>
-<div class="canvasForm">
     <canvas id="jsCanvas" class ="canvas"></canvas>
+<div class = "rangeForm">
+<input type="range" id="points" class = "range" name="points" min="0" max="5">
 </div>
 <div class = "button">
-<input type="button" class="paint" value ="PAINT" />
-<input type="button" class="save" value ="SAVE" />
+<button class="paint">PAINT</button>
+<button class="save">SAVE</button>
 </div>
 <div class = "canvasColorForm">
+    <canvas class="canvasColor" style = "background-color:black"></canvas>
     <canvas class="canvasColor" style = "background-color:white;"></canvas>
     <canvas class="canvasColor" style = "background-color:cornsilk"></canvas>
     <canvas class="canvasColor" style = "background-color:yellow"></canvas>
@@ -24,7 +26,6 @@
     <canvas class="canvasColor" style = "background-color:red"></canvas>
     <canvas class="canvasColor" style = "background-color:lightgreen"></canvas>
     <canvas class="canvasColor" style = "background-color:rgb(75, 191, 230)"></canvas>
-    <canvas class="canvasColor" style = "background-color:black"></canvas>
 </div>
 <script src="app.js"></script>
 </body>
