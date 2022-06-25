@@ -1,32 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css"/>
-    <title>PaintJS</title>
-</head>
-<body>
-    <canvas id="jsCanvas" class ="canvas"></canvas>
-<div class = "rangeForm">
-<input type="range" id="points" class = "range" name="points" min="0" max="5">
-</div>
-<div class = "button">
-<button class="paint">PAINT</button>
-<button class="save">SAVE</button>
-</div>
-<div class = "canvasColorForm">
-    <canvas class="canvasColor" style = "background-color:black"></canvas>
-    <canvas class="canvasColor" style = "background-color:white;"></canvas>
-    <canvas class="canvasColor" style = "background-color:cornsilk"></canvas>
-    <canvas class="canvasColor" style = "background-color:yellow"></canvas>
-    <canvas class="canvasColor" style = "background-color:skyblue"></canvas>
-    <canvas class="canvasColor" style = "background-color:gray"></canvas>
-    <canvas class="canvasColor" style = "background-color:red"></canvas>
-    <canvas class="canvasColor" style = "background-color:lightgreen"></canvas>
-    <canvas class="canvasColor" style = "background-color:rgb(75, 191, 230)"></canvas>
-</div>
-<script src="app.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css"/>
+        <title>PaintJS</title>
+    </head>
+    <body>
+        <canvas id="jsCanvas" class="canvas"></canvas>
+        <div class="rangeForm">
+            <input type="range" id="points" class="range" name="points" min="0" max="5">
+        </div>
+        <div class="button">
+            <button class="paint">PAINT</button>
+            <button class="save">SAVE</button>
+        </div>
+        <div class="canvasColorForm">
+            <canvas class="bgColor" style="background-color:black"></canvas>
+            <canvas class="bgColor" style="background-color:white;"></canvas>
+            <canvas class="bgColor" style="background-color:cornsilk"></canvas>
+            <canvas class="bgColor" style="background-color:yellow"></canvas>
+            <canvas class="bgColor" style="background-color:skyblue"></canvas>
+            <canvas class="bgColor" style="background-color:gray"></canvas>
+            <canvas class="bgColor" style="background-color:red"></canvas>
+            <canvas class="bgColor" style="background-color:lightgreen"></canvas>
+            <canvas class="bgColor" style="background-color:rgb(75, 191, 230)"></canvas>
+        </div>
+        <!-- <script src="execise.js"></script> -->
+        <script src="app.js"></script>
+    </body>
 </html>
