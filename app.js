@@ -2,7 +2,7 @@ const canvas = document.querySelector("#jsCanvas");
 const ctx = canvas.getContext("2d");
 const colors = document.getElementsByClassName("bgColor");
 const range = document.querySelector("#jsRange");
-const modeChange = document.querySelector("#paintBtn");
+const mode = document.querySelector("#paintBtn");
 const save = document.querySelector("#saveBtn");
 
 
@@ -51,10 +51,10 @@ function handleRangeChange (event) {
 function handleModeClick () {
   if(filling === true) {
     filling = false;
-    modeChange.innerText = "FILL";
+    modeChange.innerText = "PAINT";
   }else {
     filling = true;
-    modeChange.innerText = "PAINT";
+    modeChange.innerText = "FILL";
   }
 }
 
@@ -69,9 +69,8 @@ function handleCM (event) {
 }
 
 function handleSaveClick () {
-  const image = canvas.toDataURL("image/jpeg");
   const link = document.createElement("a");
-  link.href = image;
+  link.href = canvas.toDataURL("image/jpeg");
   link.download = "PaintJS[❤]";
   link.click();
 }
@@ -90,10 +89,10 @@ if (range) {
   range.addEventListener("input", handleRangeChange);
 }
 
-if (modeChange) {
-  modeChange.addEventListener("click", handleModeClick);
+if (mode) {
+  mode.addEventListener("click", handleModeClick);
 }
 
-if(saveBtn) {
-  saveBtn.addEventListener("click", handleSaveClick);
+if(save) {
+  save.addEventListener("click", handleSaveClick);
 }
